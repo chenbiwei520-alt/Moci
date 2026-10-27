@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+.kotlin/
+build/
+**/build/
+
+# Local configuration
+local.properties
+
+# Signing secrets — never commit
+keystore/
+keystore.properties
+*.jks
+*.keystore
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime artifacts
+*.hprof
+captures/
+dist/
