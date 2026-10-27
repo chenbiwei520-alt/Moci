@@ -6,6 +6,10 @@
 -dontwarn com.tom_roush.fontbox.**
 -dontwarn com.tom_roush.harmony.**
 
+# Room instantiates generated database classes reflectively. The bundled Room
+# 2.2.5 rule only keeps the class, so R8 strips the no-arg constructor.
+-keep class * extends androidx.room.RoomDatabase { <init>(); }
+
 # Enum constant names are part of the stored progress format.
 -keep enum com.cbw21.moci.data.AnswerStatus { *; }
 

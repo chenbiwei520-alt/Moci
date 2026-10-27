@@ -23,7 +23,7 @@
 
 ## 下载
 
-前往 [Releases](https://github.com/chenbiwei520-alt/Moci/releases/latest) 下载 `Moci-1.0.0-arm64.apk`。
+前往 [Releases](https://github.com/chenbiwei520-alt/Moci/releases/latest) 下载最新的 `Moci-1.0.1-arm64.apk`（1.0.0 存在启动崩溃问题，请勿使用）。
 
 - 系统要求：Android 12（API 31）及以上，**仅 arm64-v8a**。
 - 手写识别依赖 Google ML Kit：首次使用需联网下载约 20 MB 的识别模型，并要求设备带有 Google Play 服务。无 GMS 的设备仍可使用键盘默写。
@@ -58,7 +58,7 @@
 
 Debug 版与 Release 版签名不同，无法直接覆盖安装。迁移步骤：
 
-1. 安装 1.0.0 的 Debug 包覆盖旧 Debug 包（签名一致，数据保留）。
+1. 安装与旧 Debug 包签名一致的 Debug 包覆盖安装（数据保留）。
 2. 打开应用，在词书列表底部「导出备份」。
 3. 卸载 Debug 版。
 4. 安装 Release 版，在词书列表底部或空状态页「从备份导入」。
